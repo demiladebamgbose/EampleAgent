@@ -18,3 +18,7 @@ def get_phoenix_endpoint():
     return phoenix_endpoint
 
 
+def get_phoenix_api_key():
+    load_env()
+    return os.getenv("PHOENIX_API_KEY")
+
